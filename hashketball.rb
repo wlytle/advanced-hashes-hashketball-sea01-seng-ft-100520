@@ -176,7 +176,13 @@ def player_numbers(selected_team)
 end
 
 def player_stats(selected_player)
-  
+  game_hash.each do |team, info|
+    info[:players].each do |player|
+      if player[:player_name] == selected_player
+        return player
+      end
+    end
+  end
 end
 
 
