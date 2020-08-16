@@ -244,6 +244,10 @@ def winning_team
 end
 
 def player_with_longest_name
+  longest_name = ""
+  name_length = 0
   players = all_players()
-  
+  players.each do |name|
+    
+  end
 end
