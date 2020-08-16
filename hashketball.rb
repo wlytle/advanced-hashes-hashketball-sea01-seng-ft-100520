@@ -199,8 +199,12 @@ def big_shoe_rebounds
   biggest_shoe = 0
   big_shoe_player = ""
   players = all_players
-  plays.each do |player|
-    shoe_size(player)
-    
+  
+  players.each do |player|
+    shoe = shoe_size(player)
+    if shoe > biggest_shoe
+      biggest_shoe = shoe
+      big_shoe_player = player
+    end
   end
 end
