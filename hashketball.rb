@@ -154,7 +154,12 @@ def team_colors(selected_team)
   end
 end
 
-
+def team_names
+  teams = []
+  game_hash.each do |team|
+    
+  end
+end
 
 
 
