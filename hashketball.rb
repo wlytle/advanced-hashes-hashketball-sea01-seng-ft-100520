@@ -152,7 +152,6 @@ def all_players
        all_players << player[:player_name]
       end
     end
-  end
   all_players
 end
 
