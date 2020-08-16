@@ -224,7 +224,18 @@ def most_points_scored
   highest_scorer
 end
 
-
+def winning_team
+  team_names = []
+  score = 0
+  score_array = []
+  game_hash.each do |team, info|
+    team_names << info[:team_name]
+    info[:players].each do |player|
+      score = score + player[:points]
+    end
+    score_array << score
+  end
+end
 
 
 
