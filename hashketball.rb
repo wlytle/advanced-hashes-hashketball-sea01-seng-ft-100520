@@ -129,7 +129,6 @@ end
 
 def search_by_player(selected_player, attribute)
   game_hash.each do |team, info|
-    binding.pry
     info[:players].each do |player|
       if player[:player_name] == selected_player
         return player[attribute]
