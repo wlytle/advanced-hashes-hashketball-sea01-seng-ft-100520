@@ -175,4 +175,8 @@ def player_numbers(selected_team)
   jersey_numbers
 end
 
+def player_stats(selected_player)
+  
+end
+
 
