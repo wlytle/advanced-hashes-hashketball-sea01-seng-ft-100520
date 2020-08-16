@@ -207,4 +207,5 @@ def big_shoe_rebounds
       big_shoe_player = player
     end
   end
+  search_by_player(big_shoe_player, :rebounds)
 end
