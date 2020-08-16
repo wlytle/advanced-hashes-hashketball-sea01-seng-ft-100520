@@ -268,4 +268,8 @@ def long_name_steals_a_ton?
       thief = player
     end
   end
+  if thief = longest_name
+    return true
+  else 
+    return false
 end
