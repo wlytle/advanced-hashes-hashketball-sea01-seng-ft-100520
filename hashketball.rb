@@ -167,10 +167,12 @@ def team_names
 end
 
 def player_numbers(selected_team)
+  jersey_numbers = []
   players = search_by_team(selected_team, :players)
   players.each do |player|
-    
+    jersey_numbers << player[:number]
   end
+  jersey_numbers
 end
 
 
