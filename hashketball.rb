@@ -245,9 +245,13 @@ end
 
 def player_with_longest_name
   longest_name = ""
-  name_length = 0
+  long_name = 0
   players = all_players()
   players.each do |name|
-    
+    if name.length > long_name
+      long_name = name.length
+      longest_name = name
+    end
   end
+  longest_name
 end
