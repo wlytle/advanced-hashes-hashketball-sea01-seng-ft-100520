@@ -221,6 +221,7 @@ def most_points_scored
       highest_scorer = player
     end
   end
+  highest_scorer
 end
 
 
