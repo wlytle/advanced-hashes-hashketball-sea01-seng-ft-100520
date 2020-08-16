@@ -196,6 +196,8 @@ def player_stats(selected_player)
 end
 
 def big_shoe_rebounds
-  
-  
+  players = all_players
+  plays.each do |player|
+    shoe_size(player)
+  end
 end
