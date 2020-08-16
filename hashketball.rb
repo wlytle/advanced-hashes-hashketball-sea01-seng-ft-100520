@@ -244,5 +244,6 @@ def winning_team
 end
 
 def player_with_longest_name
-
+  players = all_players()
+  
 end
