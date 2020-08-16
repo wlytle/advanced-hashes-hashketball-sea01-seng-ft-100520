@@ -140,7 +140,7 @@ end
 def search_by_team(selected_team, attribute)
   game_hash.each do |team, info|
     if info[:team_name] == selected_team
-      return team[1][attribute]
+      return info[attribute]
     end
   end
 end
