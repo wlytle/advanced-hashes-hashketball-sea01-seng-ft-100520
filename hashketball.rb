@@ -147,7 +147,9 @@ def shoe_size (selected_player)
   end
 end
 
-
+def team_colors()
+  
+end
 
 
 
