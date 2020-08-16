@@ -258,5 +258,8 @@ end
 
 def long_name_steals_a_ton?
   longst_name = player_with_longest_name()
-  
+  players = all_players()
+  players.each do |player|
+    
+  end
 end
