@@ -210,5 +210,20 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
-
+  most_points = 0
+  highest_scorer = ""
+  players = all_players
+  
+  players.each do |player|
+    points = search_by_player(player, :points)
+    if points > most_points
+      most_points = points
+      highest_scorer = player
+    end
+  end
 end
+
+
+
+
+
