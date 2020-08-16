@@ -235,6 +235,12 @@ def winning_team
     end
     score_array << score
   end
+  if score_array[0] > score_array[1]
+    winner = team_names[0]
+  else
+    winner = team_names[1]
+  end
+  winner
 end
 
 
