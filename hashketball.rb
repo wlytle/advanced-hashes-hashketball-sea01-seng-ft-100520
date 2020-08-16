@@ -137,6 +137,14 @@ def search_by_player(selected_player, attribute)
   end
 end
 
+def search_by_team(selected_team, attribute)
+  game_hash.each do |team|
+    if team[1][:team_name] == selected_team
+      return team[1][attribute]
+    end
+  end
+end
+
 
 def num_points_scored(selected_player)
   search_by_player(selected_player, :points)
@@ -147,11 +155,7 @@ def shoe_size (selected_player)
 end
 
 def team_colors(selected_team)
-  game_hash.each do |team|
-    if team[1][:team_name] == selected_team
-      return team[1][:colors]
-    end
-  end
+  search_by_team(selected_team, :colors)
 end
 
 def team_names
@@ -162,7 +166,8 @@ def team_names
   teams
 end
 
-def 
-
+def player_numbers(selected_team)
+  
+end
 
 
