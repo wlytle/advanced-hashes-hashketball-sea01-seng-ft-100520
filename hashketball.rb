@@ -167,6 +167,7 @@ def team_names
 end
 
 def player_numbers(selected_team)
+  players = search_by_team(selected_team, :players)
   
 end
 
