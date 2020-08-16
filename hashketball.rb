@@ -168,7 +168,9 @@ end
 
 def player_numbers(selected_team)
   players = search_by_team(selected_team, :players)
-  players.each do ||
+  players.each do |player|
+    
+  end
 end
 
 
