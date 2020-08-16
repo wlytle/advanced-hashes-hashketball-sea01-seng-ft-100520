@@ -259,7 +259,7 @@ end
 def long_name_steals_a_ton?
   most_steals = 0
   thief = ""
-  longst_name = player_with_longest_name()
+  longest_name = player_with_longest_name()
   players = all_players()
   players.each do |player|
     steals = search_by_player(player, :steals)
