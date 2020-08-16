@@ -145,6 +145,16 @@ def search_by_team(selected_team, attribute)
   end
 end
 
+def all_players
+  all_players = []
+  game_hash.each do |team, info|
+    info[:players].each do |player|
+       all_players << player[:player_name]
+      end
+    end
+  end
+  all_players
+end
 
 def num_points_scored(selected_player)
   search_by_player(selected_player, :points)
@@ -186,5 +196,6 @@ def player_stats(selected_player)
 end
 
 def big_shoe_rebounds
+  
   
 end
